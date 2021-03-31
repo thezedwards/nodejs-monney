@@ -1,0 +1,28 @@
+{
+  "name": "meocoder-project",
+  "version": "1.0.0",
+  "description": "Something like a test you know?",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"no file specified\" && exit=1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "puppeteer"
+  ],
+  "author": "meocoder",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^8.0.0",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-stealth": "^2.7.6",
+    "puppeteer-extra-plugin-user-data-dir": "^2.2.12"
+  },
+  "devDependencies": {
+    "foxr": "^0.10.1"
+  }
+}
